@@ -16,6 +16,7 @@ namespace CoreThirdTools.Controllers
     [ApiController]
     public class ExcelController : ControllerBase
     {
+        #region 基于epplus
         [HttpPost]
         [Route("import")]
         public List<ExcelDemoDto> Import([FromForm] ImportExcelInput input)
@@ -59,15 +60,6 @@ namespace CoreThirdTools.Controllers
         [Route("export")]
         public async Task<string> Export()
         {
-            //string sWebRootFolder = _hostingEnvironment.WebRootPath;
-            //string sFileName = $"{DateTime.Now.ToString("yyyyMMddHHmmssfff")}.xlsx";
-            //FileInfo file = new FileInfo(Path.Combine(sWebRootFolder, sFileName));
-            //if (file.Exists)
-            //{
-            //    file.Delete();
-            //    file = new FileInfo(Path.Combine(sWebRootFolder, sFileName));
-            //}
-            //MemoryStream stream = new MemoryStream();
             ExcelPackage.LicenseContext = LicenseContext.NonCommercial;
             using var package = new ExcelPackage();
             var worksheet = package.Workbook.Worksheets.Add("sheet1");
@@ -140,6 +132,8 @@ namespace CoreThirdTools.Controllers
             await package.GetAsByteArray().DownloadAsync(path);
             return path;
         }
+
+        #endregion
 
     }
 }

@@ -35,3 +35,4 @@ D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\Swashbuc
 D:\ycy\study\core\CoreThirdTools\CoreThirdTools\obj\Debug\netcoreapp3.1\CoreThirdTools.csproj.CoreCompileInputs.cache
 D:\ycy\study\core\CoreThirdTools\CoreThirdTools\obj\Debug\netcoreapp3.1\CoreThirdTools.MvcApplicationPartsAssemblyInfo.cs
 D:\ycy\study\core\CoreThirdTools\CoreThirdTools\obj\Debug\netcoreapp3.1\CoreThirdTools.MvcApplicationPartsAssemblyInfo.cache
+D:\ycy\study\core\CoreThirdTools\CoreThirdTools\obj\Debug\netcoreapp3.1\CoreThirdTools.csprojAssemblyReference.cache
