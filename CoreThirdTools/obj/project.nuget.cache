@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "yNDlKlTY6k26ltnUgKUnSuEd0gZBZZo8hZPhBcJNVxGW22fIqMvc6AI2dfSzHA6gRl8ZqAgecFDHJUjQEETdJQ==",
+  "dgSpecHash": "/4xVKd3e9AaqxivC9lDJQ5rwODoeqXifagLwunCkgGFtvsA4QLw8Kzp+L6GdtVlUW/30wxx2aBtrak+xP39wbw==",
   "success": true,
   "projectFilePath": "D:\\ycy\\study\\core\\CoreThirdTools\\CoreThirdTools\\CoreThirdTools.csproj",
   "expectedPackageFiles": [
@@ -21,6 +21,7 @@
     "C:\\Users\\ycy\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
     "C:\\Users\\ycy\\.nuget\\packages\\mimekit\\2.9.2\\mimekit.2.9.2.nupkg.sha512",
     "C:\\Users\\ycy\\.nuget\\packages\\portable.bouncycastle\\1.8.5\\portable.bouncycastle.1.8.5.nupkg.sha512",
+    "C:\\Users\\ycy\\.nuget\\packages\\qrcoder\\1.3.9\\qrcoder.1.3.9.nupkg.sha512",
     "C:\\Users\\ycy\\.nuget\\packages\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.debian.8-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\ycy\\.nuget\\packages\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.23-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",
     "C:\\Users\\ycy\\.nuget\\packages\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl\\4.3.2\\runtime.fedora.24-x64.runtime.native.system.security.cryptography.openssl.4.3.2.nupkg.sha512",

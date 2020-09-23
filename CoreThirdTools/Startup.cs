@@ -23,6 +23,7 @@ namespace CoreThirdTools
 
             services.AddScoped<Captcha>();
             services.AddSingleton<Email>();
+            services.AddSingleton<QRCode>();
 
             services.AddSwaggerGen(c =>
             {
