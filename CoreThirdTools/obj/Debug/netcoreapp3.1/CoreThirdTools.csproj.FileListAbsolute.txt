@@ -32,6 +32,9 @@ D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\Microsof
 D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
 D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\MailKit.dll
+D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\MimeKit.dll
+D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
 D:\ycy\study\core\CoreThirdTools\CoreThirdTools\obj\Debug\netcoreapp3.1\CoreThirdTools.csproj.CoreCompileInputs.cache
 D:\ycy\study\core\CoreThirdTools\CoreThirdTools\obj\Debug\netcoreapp3.1\CoreThirdTools.MvcApplicationPartsAssemblyInfo.cs
 D:\ycy\study\core\CoreThirdTools\CoreThirdTools\obj\Debug\netcoreapp3.1\CoreThirdTools.MvcApplicationPartsAssemblyInfo.cache

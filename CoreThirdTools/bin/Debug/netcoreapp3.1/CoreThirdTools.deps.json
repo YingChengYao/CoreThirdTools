@@ -25,6 +25,7 @@
       "CoreThirdTools/1.0.0": {
         "dependencies": {
           "EPPlus": "5.3.2",
+          "MailKit": "2.9.0",
           "Swashbuckle.AspNetCore": "5.6.1",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -323,6 +324,20 @@
           "lib/netstandard2.1/EPPlus.dll": {}
         }
       },
+      "MailKit/2.9.0": {
+        "dependencies": {
+          "MimeKit": "2.9.2"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MailKit.dll": {
+            "assemblyVersion": "2.9.0.0",
+            "fileVersion": "2.9.0.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/MailKit.dll": {}
+        }
+      },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
       "Microsoft.Extensions.Configuration/3.1.5": {
         "dependencies": {
@@ -449,6 +464,34 @@
       "Microsoft.Win32.SystemEvents/4.7.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.1"
+        }
+      },
+      "MimeKit/2.9.2": {
+        "dependencies": {
+          "Portable.BouncyCastle": "1.8.5",
+          "System.Reflection.TypeExtensions": "4.4.0",
+          "System.Security.Cryptography.Pkcs": "4.7.0",
+          "System.Text.Encoding.CodePages": "4.7.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/MimeKit.dll": {
+            "assemblyVersion": "2.9.0.0",
+            "fileVersion": "2.9.2.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/MimeKit.dll": {}
+        }
+      },
+      "Portable.BouncyCastle/1.8.5": {
+        "runtime": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {
+            "assemblyVersion": "1.8.5.0",
+            "fileVersion": "1.8.5.50"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/BouncyCastle.Crypto.dll": {}
         }
       },
       "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {},
@@ -611,7 +654,7 @@
           "System.Reflection": "4.3.0",
           "System.Reflection.Extensions": "4.3.0",
           "System.Reflection.Primitives": "4.3.0",
-          "System.Reflection.TypeExtensions": "4.3.0",
+          "System.Reflection.TypeExtensions": "4.4.0",
           "System.Resources.ResourceManager": "4.3.0",
           "System.Runtime": "4.3.0",
           "System.Runtime.Extensions": "4.3.0",
@@ -737,12 +780,7 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Reflection.TypeExtensions/4.3.0": {
-        "dependencies": {
-          "System.Reflection": "4.3.0",
-          "System.Runtime": "4.3.0"
-        }
-      },
+      "System.Reflection.TypeExtensions/4.4.0": {},
       "System.Resources.ResourceManager/4.3.0": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "3.1.1",
@@ -2653,6 +2691,13 @@
       "path": "epplus/5.3.2",
       "hashPath": "epplus.5.3.2.nupkg.sha512"
     },
+    "MailKit/2.9.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-yFXqvORpRyveseJ4+RNOKNwabu/5vk1EVdY4oTKWvwDgWGTnOyop+U7iF6C1uYe5NroCCkKYPMPsgtMVX9FdcQ==",
+      "path": "mailkit/2.9.0",
+      "hashPath": "mailkit.2.9.0.nupkg.sha512"
+    },
     "Microsoft.Extensions.ApiDescription.Server/3.0.0": {
       "type": "package",
       "serviceable": true,
@@ -2743,6 +2788,20 @@
       "sha512": "sha512-mtVirZr++rq+XCDITMUdnETD59XoeMxSpLRIII7JRI6Yj0LEDiO1pPn0ktlnIj12Ix8bfvQqQDMMIF9wC98oCA==",
       "path": "microsoft.win32.systemevents/4.7.0",
       "hashPath": "microsoft.win32.systemevents.4.7.0.nupkg.sha512"
+    },
+    "MimeKit/2.9.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tj8mhCKPFu4FK9F2Md1x5xN3hVY7EC5e6j8Z51ynReRWhnlFfVkIWj5jnHZu7irUsvSX3JWk0HL5LLOuECOFbw==",
+      "path": "mimekit/2.9.2",
+      "hashPath": "mimekit.2.9.2.nupkg.sha512"
+    },
+    "Portable.BouncyCastle/1.8.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-EaCgmntbH1sOzemRTqyXSqYjB6pLH7VCYHhhDYZ59guHSD5qPwhIYa7kfy0QUlmTRt9IXhaXdFhNuBUArp70Ng==",
+      "path": "portable.bouncycastle/1.8.5",
+      "hashPath": "portable.bouncycastle.1.8.5.nupkg.sha512"
     },
     "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl/4.3.2": {
       "type": "package",
@@ -3031,12 +3090,12 @@
       "path": "system.reflection.primitives/4.3.0",
       "hashPath": "system.reflection.primitives.4.3.0.nupkg.sha512"
     },
-    "System.Reflection.TypeExtensions/4.3.0": {
+    "System.Reflection.TypeExtensions/4.4.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-7u6ulLcZbyxB5Gq0nMkQttcdBTx57ibzw+4IOXEfR+sXYQoHvjW5LTLyNr8O22UIMrqYbchJQJnos4eooYzYJA==",
-      "path": "system.reflection.typeextensions/4.3.0",
-      "hashPath": "system.reflection.typeextensions.4.3.0.nupkg.sha512"
+      "sha512": "sha512-dkmh/ySlwnXJp/1qYP9uyKkCK1CXR/REFzl7abHcArxBcV91mY2CgrrzSRA5Z/X4MevJWwXsklGRdR3A7K9zbg==",
+      "path": "system.reflection.typeextensions/4.4.0",
+      "hashPath": "system.reflection.typeextensions.4.4.0.nupkg.sha512"
     },
     "System.Resources.ResourceManager/4.3.0": {
       "type": "package",
