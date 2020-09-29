@@ -35,8 +35,15 @@ D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\Swashbuc
 D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\MailKit.dll
 D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\MimeKit.dll
 D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\BouncyCastle.Crypto.dll
-D:\ycy\study\core\CoreThirdTools\CoreThirdTools\obj\Debug\netcoreapp3.1\CoreThirdTools.csprojAssemblyReference.cache
 D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\QRCoder.dll
+D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\ycy\study\core\CoreThirdTools\CoreThirdTools\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
 D:\ycy\study\core\CoreThirdTools\CoreThirdTools\obj\Debug\netcoreapp3.1\CoreThirdTools.csproj.CoreCompileInputs.cache
 D:\ycy\study\core\CoreThirdTools\CoreThirdTools\obj\Debug\netcoreapp3.1\CoreThirdTools.MvcApplicationPartsAssemblyInfo.cs
 D:\ycy\study\core\CoreThirdTools\CoreThirdTools\obj\Debug\netcoreapp3.1\CoreThirdTools.MvcApplicationPartsAssemblyInfo.cache
