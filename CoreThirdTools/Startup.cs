@@ -52,11 +52,11 @@ namespace CoreThirdTools
                         ValidateIssuer = true,//是否验证颁发者
                         ValidateAudience = true,//是否验证访问群体
                         ValidateLifetime = true,//是否验证生存期
-                        ClockSkew = TimeSpan.FromSeconds(Convert.ToInt32(Appsettings.JWT.ClockSkew)),//验证Token的时间偏移量
+                        ClockSkew = TimeSpan.FromSeconds(Convert.ToInt32(AppSettings.JWT.ClockSkew)),//验证Token的时间偏移量
                         ValidateIssuerSigningKey = true,//是否验证安全密钥
-                        ValidAudience = Appsettings.JWT.ValidAudience,//访问群体
-                        ValidIssuer = Appsettings.JWT.ValidIssuer,//颁发者
-                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Appsettings.JWT.SecurityKey))//安全密钥
+                        ValidAudience = AppSettings.JWT.ValidAudience,//访问群体
+                        ValidIssuer = AppSettings.JWT.ValidIssuer,//颁发者
+                        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(AppSettings.JWT.SecurityKey))//安全密钥
                     };
 
                     options.Events = new JwtBearerEvents

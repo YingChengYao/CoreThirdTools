@@ -32,18 +32,18 @@ namespace CoreThirdTools.Controllers
                 var claims = new[] {
                     new Claim(ClaimTypes.Name, username),
                     new Claim(ClaimTypes.Email, "123@meowv.com"),
-                    new Claim(JwtRegisteredClaimNames.Exp, $"{new DateTimeOffset(DateTime.Now.AddMinutes(Convert.ToInt32(Appsettings.JWT.Expires))).ToUnixTimeSeconds()}"),
+                    new Claim(JwtRegisteredClaimNames.Exp, $"{new DateTimeOffset(DateTime.Now.AddMinutes(Convert.ToInt32(AppSettings.JWT.Expires))).ToUnixTimeSeconds()}"),
                     new Claim(JwtRegisteredClaimNames.Nbf, $"{new DateTimeOffset(DateTime.Now).ToUnixTimeSeconds()}")
                 };
 
-                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Appsettings.JWT.SecurityKey));
+                var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(AppSettings.JWT.SecurityKey));
                 var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
                 var securityToken = new JwtSecurityToken(
-                    issuer: Appsettings.JWT.ValidIssuer,
-                    audience: Appsettings.JWT.ValidAudience,
+                    issuer: AppSettings.JWT.ValidIssuer,
+                    audience: AppSettings.JWT.ValidAudience,
                     claims: claims,
-                    expires: DateTime.Now.AddMinutes(Convert.ToInt32(Appsettings.JWT.Expires)),
+                    expires: DateTime.Now.AddMinutes(Convert.ToInt32(AppSettings.JWT.Expires)),
                     signingCredentials: creds);
 
                 var token = new JwtSecurityTokenHandler().WriteToken(securityToken);
