@@ -1,4 +1,6 @@
-﻿using MailKit.Net.Smtp;
+﻿using CoreThirdTools.Helper;
+using CoreThirdTools.Models.Email;
+using MailKit.Net.Smtp;
 using MimeKit;
 using System;
 using System.Collections.Generic;
@@ -38,6 +40,11 @@ namespace CoreThirdTools.Services
             await client.AuthenticateAsync(from_username, from_password);
             await client.SendAsync(message);
             await client.DisconnectAsync(true);
+        }
+
+        public async Task SendEmailAsync(MimeMessage message, EamilSendDto eamilSendDto)
+        {
+            await EmailHelper.SendAsync(message, eamilSendDto);
         }
     }
 }

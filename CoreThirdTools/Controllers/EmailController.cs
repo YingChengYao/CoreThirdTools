@@ -1,8 +1,10 @@
-﻿using CoreThirdTools.Services;
+﻿using CoreThirdTools.Models.Email;
+using CoreThirdTools.Services;
 using Microsoft.AspNetCore.Mvc;
 using MimeKit;
 using MimeKit.Utils;
 using System;
+using System.Collections.Generic;
 using System.Threading.Tasks;
 
 namespace CoreThirdTools.Controllers
@@ -19,11 +21,29 @@ namespace CoreThirdTools.Controllers
                 Subject = "我是邮件主题",
                 Body = new BodyBuilder
                 {
+                    //TextBody="",
                     HtmlBody = $"我是邮件内容，时间:{DateTime.Now:yyyy-MM-dd HH:mm:ss}"
                 }.ToMessageBody()
             };
 
-            await _email.SendEmailAsync(message);
+            //await _email.SendEmailAsync(message);
+
+            EamilSendDto eamilSendDto = new EamilSendDto()
+            {
+                FormName = "测试",
+                FormAddress = "6321735161@qq.com",
+                FormUserName = "632173516@qq.com",
+                FormPassword = "vcntoakcrmihbfcc",
+                ToMailboxAddress = new List<MailboxAddress>
+                {
+                    new MailboxAddress("111","yingcy@tijian.net"),
+                    new MailboxAddress("222","yingcy@tijian.net")
+                },
+                Host = "smtp.qq.com",
+                Port = 465,
+                UseSsl = true
+            };
+            await _email.SendEmailAsync(message, eamilSendDto);
         }
 
         [HttpPost]
